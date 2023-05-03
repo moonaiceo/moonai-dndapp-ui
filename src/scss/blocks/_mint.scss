@@ -1,0 +1,193 @@
+.mint {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    &__app {
+        position: relative;
+        width: 450px;
+        min-height: 485px;
+        background: #0D1417;
+        border: 1px solid #333233;
+        padding-bottom: 66px;
+        &__change {
+            display: flex;
+            &-state {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 225px;
+                height: 66px;
+                background: rgba(255, 254, 254, 0.02);
+                border: 1px solid #333233;
+                font-family: 'Ubuntu';
+                font-weight: 400;
+                font-size: 20px;
+                color: #FFFFFF;
+                cursor: pointer;
+                transition: 0.3s all;
+                &:hover {
+                    background: #fff;
+                    color: #000;
+                }
+                &_active {
+                    background: rgba(105, 29, 181, 0.5);
+                }
+            }
+        }
+        &__inputs {
+            padding: 30px 25px;
+            &-item {
+                margin-bottom: 36px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &__label {
+                    font-family: 'Ubuntu';
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #FFFFFF;
+                }
+                &__field {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 6px;
+                    padding: 10px;
+                    width: 400px;
+                    height: 43px;
+                    border: 1px solid #333233;
+                    input {
+                        height: 100%;
+                        width: 75%;
+                        margin-right: 10px;
+                        background: #0D1417;
+                        border: none;
+                        font-family: 'Ubuntu';
+                        font-weight: 400;
+                        font-size: 20px;
+                        color: #FFFFFF;
+                    }
+                    &-img {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 24px;
+                        height: 24px;
+                        background: #FFFFFF;
+                        margin-right: 7px;
+                        border-radius: 100%;
+                        img {
+                            object-fit: contain;
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        &__info {
+            padding: 5px 25px;
+            &-item {
+                display: flex;
+                justify-content: space-between;
+                &__label {
+                    font-family: 'Ubuntu';
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                }
+                &__descr {
+                    font-family: 'Ubuntu';
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        &__btn {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 62px;
+            border: 1px solid #333233;
+            font-family: 'Ubuntu';
+            font-weight: 400;
+            font-size: 20px;
+            color: #FFFFFF;
+            transition: 0.3s all;
+            &_active {
+                background: rgba(105, 29, 181, 0.5);
+                &:hover {
+                    color: #000;
+                    background: #fff;
+                }
+            }
+        }
+        &__redeem {
+            display: none;
+            padding: 0 25px;
+            &-wrapper {
+                margin-top: 4px;
+                display: flex;
+                &__radio {
+                    display: flex;
+                    align-items: center;
+                    height: 43px;
+                    width: 198px;
+                    border: 1px solid #333233;
+                    margin-right: 4px;
+                    padding: 8px;
+                    cursor: pointer;
+                    transition: 0.3s all;
+                    &:hover {
+                        background: #333233;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &-img {
+                        content: url('../icons/check_empty.svg');
+                        object-fit: contain;
+                        width: 28px;
+                        height: 28px;
+                        margin-right: 8px;
+                        &_active {
+                            content: url('../icons/check.svg');
+                        }
+                    }
+                    &-text {
+                        font-family: 'Ubuntu';
+                        font-weight: 400;
+                        font-size: 20px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            &-list {
+                margin-top: 11px;
+                list-style-type: disc;
+                display: none;
+                &__item {
+                    font-family: 'Ubuntu';
+                    font-weight: 300;
+                    font-size: 10px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                    margin-left: 16px;
+                }
+                &_active {
+                    display: block;
+                }
+            }
+            &_active {
+                display: block;
+            }
+        }
+    }
+}

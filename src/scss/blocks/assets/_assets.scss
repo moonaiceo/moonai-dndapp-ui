@@ -1,0 +1,110 @@
+.assets {
+    width: 59%;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding-top: 32px;
+    padding-bottom: 81px;
+    // padding: 32px 296px 81px 296px;
+    &__title {
+        margin-left: 45px;
+        font-family: 'Ubuntu';
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    &__graph {
+        display: flex;
+        margin-left: 45px;
+        margin-top: 18px;
+        &__legend {
+            margin-top: 11px;
+            &-item {
+                display: flex;
+                margin-top: 7px;
+                &:first-child {
+                    margin-top: 0;
+                }
+                &__box {
+                    margin-right: 9px;
+                    width: 21px;
+                    height: 8px;
+                    &_atom {
+                        background: #1515C3;
+                    }
+                    &_inj {
+                        background: #5C42D4;
+                    }
+                    &_osmo {
+                        background: #D190F5;
+                    }
+                    &_scrt {
+                        background: #08D3FF;
+                    }
+                    &_glp {
+                        background: #05E5BF;
+                    }
+                }
+                &__label {
+                    font-family: 'Inter';
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    &__table {
+        margin-top: 52px;
+        &__labels {
+            display: flex;
+            justify-content: space-between;
+            &-item {
+                margin: 0 auto;
+                font-family: 'Ubuntu';
+                font-weight: 400;
+                font-size: 20px;
+                color: #FFFFFF;
+                text-align: center;
+                width: 193px;
+                &:first-child {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        &__items {
+            display: flex;
+            flex-direction: column;
+            &-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 21px;
+                &:first-child {
+                    margin-top: 13px;
+                }
+                &__img {
+                    object-fit: contain;
+                    height: 30px;
+                    width: 30px;
+                    margin: 0 auto;
+                }
+                &__descr {
+                    width: 193px;
+                    margin: 0 auto;
+                    font-family: 'Ubuntu';
+                    font-weight: 400;
+                    font-size: 20px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+#doughnut {
+    margin-right: 38px;
+}

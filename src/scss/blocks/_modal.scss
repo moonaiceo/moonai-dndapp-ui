@@ -1,0 +1,79 @@
+.modal {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 450px;
+    min-height: 309px;
+    display: none;
+    &__header {
+        position: relative;
+        height: 55px;
+        display: flex;
+        background: #0D1417;
+        border: 1px solid #333233;
+        &-text {
+            width: 395px;
+            height: 55px;
+            border-right: 1px solid #333233;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Ubuntu';
+            font-weight: 400;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+    }
+    &__body {
+        min-height: 309px;
+        width: 450px;
+        padding: 25px;
+        background: #0D1417;
+        &-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 42px;
+            margin-bottom: 32px;
+            background: #0D1417;
+            border: 1px solid #333233;
+            transition: 0.3s all;
+            cursor: pointer;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:hover {
+                background: #3B1966;
+            }
+            &__text {
+                font-family: 'Ubuntu';
+                font-weight: 400;
+                font-size: 20px;
+                color: #FFFFFF;
+            }
+            &__img {
+                object-fit: contain;
+                width: 26px;
+                height: 26px;
+                margin-right: 17px;
+            }
+        }
+    }
+    &__close {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 12px;
+        
+        font-size: 41px;
+        line-height: 21px;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s all;
+        &:hover {
+            color: #3B1966;
+        }
+    }
+}

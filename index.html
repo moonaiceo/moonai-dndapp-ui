@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonai App</title>
+    <link rel="stylesheet" href="css/style.css" await>
+    <link rel="shortcut icon" href="icons/logo.svg" type="image/x-icon">
+</head>
+<body>
+    <section class="menu">
+        <div class="container">
+            <div class="menu__wrapper">
+                <div class="menu__item">
+                    <div class="menu__logo">
+                        <img src="icons/logo.svg" alt="logo icon" class="menu__logo-icon">
+                    </div>
+                    <nav>
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a href="#mint" class="menu_list-item__link">MINT</a></li>
+                            <li class="menu__list-item"><a href="assets.html" class="menu_list-item__link">Assets</a></li>
+                            <li class="menu__list-item"><a href="#strategies" class="menu_list-item__link">Strategies</a></li>
+                        </ul>
+
+                        <div class="menu__hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </nav>
+                </div>
+    
+                <button class="btn btn_connect">Connect wallet</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="mint">
+        <div class="mint__app">
+            <div class="mint__app__change">
+                <div class="mint__app__change-state mint__app__change-state_active">MINT</div>
+                <div class="mint__app__change-state">REDEEM</div>
+            </div>
+
+            <div class="mint__app__inputs">
+                <div class="mint__app__inputs-item">
+                    <div class="mint__app__inputs-item__label">FROM</div>
+                    <div class="mint__app__inputs-item__field">
+                        <div class="mint__app__inputs-item__field-img">
+                            <img src="icons/usdt.svg" alt="icon">
+                        </div>
+                        <input type="number" value="0">
+                        <div class="mint__app__inputs-item__field-currency">USDT</div>
+                    </div>
+                </div>
+                <div class="mint__app__inputs-item">
+                    <div class="mint__app__inputs-item__label">TO</div>
+                    <div class="mint__app__inputs-item__field">
+                        <div class="mint__app__inputs-item__field-img">
+                            <img src="icons/logo.svg" alt="icon">
+                        </div>
+                        <input type="number" value="0">
+                        <div class="mint__app__inputs-item__field-currency">MUSD</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mint__app__info">
+                <div class="mint__app__info-item">
+                    <div class="mint__app__info-item__label">PRICE</div>
+                    <div class="mint__app__info-item__descr">1 MUSD PER USDT</div>
+                </div>
+                <div class="mint__app__info-item">
+                    <div class="mint__app__info-item__label">SLIPPAGE TOLERANCE</div>
+                    <div class="mint__app__info-item__descr">-</div>
+                </div>
+                <div class="mint__app__info-item">
+                    <div class="mint__app__info-item__label">MINIMUM RECEIVED</div>
+                    <div class="mint__app__info-item__descr">-</div>
+                </div>
+                <div class="mint__app__info-item">
+                    <div class="mint__app__info-item__label">SWAP FEE</div>
+                    <div class="mint__app__info-item__descr"> 0.00%</div>
+                </div>
+            </div>
+
+            <div class="mint__app__redeem">
+                <div class="dash"></div>
+
+                <div class="mint__app__redeem-wrapper">
+                    <div class="mint__app__redeem-wrapper__radio mint__app__redeem-wrapper__radio_active">
+                        <img src="icons/check_empty.svg" alt="radio icon" class="mint__app__redeem-wrapper__radio-img mint__app__redeem-wrapper__radio-img_active">
+                        <div class="mint__app__redeem-wrapper__radio-text">Redeem</div>
+                    </div>
+
+                    <div class="mint__app__redeem-wrapper__radio">
+                        <img src="icons/check_empty.svg" alt="radio icon" class="mint__app__redeem-wrapper__radio-img">
+                        <div class="mint__app__redeem-wrapper__radio-text">Instant redeem</div>
+                    </div>
+                </div>
+
+                <ul class="mint__app__redeem-list mint__app__redeem-list_active">
+                    <li class="mint__app__redeem-list__item">
+                        Default redemptions take at least 21 days to process. Slashing events during the 21 days may affect the final amount withdrawn.
+                    </li>
+                    <li class="mint__app__redeem-list__item">
+                        Redemptions are processed in 3-day batches and may take up to 24 days.
+                    </li>
+                </ul>
+
+                <ul class="mint__app__redeem-list">
+                    <li class="mint__app__redeem-list__item">Instant redeem may lead to additional fees
+                    </li>
+                </ul>
+            </div>
+
+            <button class="mint__app__btn">CONNECT</button>
+        </div>
+    </section>
+
+    <div class="overlay">
+        <div class="modal">
+            <div class="modal__header">
+                <div class="modal__header-text">CONNECT WALLET</div>
+                <div class="modal__close">&times;</div>
+            </div>
+
+            <div class="modal__body">
+                <div class="modal__body-item">
+                    <img src="icons/modal/keplr.svg" alt="logo" class="modal__body-item__img">
+                    <div class="modal__body-item__text">Keplr</div>
+                </div>
+
+                <div class="modal__body-item">
+                    <img src="icons/modal/metamask.svg" alt="logo" class="modal__body-item__img">
+                    <div class="modal__body-item__text">Metamask</div>
+                </div>
+
+                <!-- <div class="modal__body-item">
+                    <img src="icons/modal/keplr.svg" alt="logo" class="modal__body-item__img">
+                    <div class="modal__body-item__text">Keplr</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

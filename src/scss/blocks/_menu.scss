@@ -1,0 +1,152 @@
+.menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 120;
+    background: url(.png), rgba(7, 14, 17, 0.5);
+    backdrop-filter: blur(4px);
+    &__item {
+        display: flex;
+    }
+    &__wrapper {
+        min-height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        &-icon {
+            margin-right: 58px;
+            width: 66px;
+            height: 66px;
+        }
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        &-item {
+            margin-right: 64px;
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            text-transform: capitalize;
+            color: #F5FBF2;
+            transition: 0.3s all;
+            cursor: pointer;
+            a.menu_list-item__link {
+                font-family: 'Ubuntu';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                text-transform: capitalize;
+                color: #F5FBF2;
+                transition: 0.3s all;
+                &:hover {
+                    color: #7780A1;
+                }
+            }
+        }
+    }
+    &__hamburger {
+        display: none;
+    }
+}
+
+@media ( max-width:  767px) {
+    .menu {
+        position: absolute;
+        &__list {
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            background: #1A242C;
+            border: 1px solid #000000;
+            top: 17px;
+            right: 800px;
+            width: 251px;
+            min-height: 342px;
+            padding: 0px 1px 99px 22px;
+            transition: 0.6s all;
+            &_active {
+                display: flex;
+                right: 50px;
+                transition: 0.6s all;
+            }
+            &-item {
+                position: relative;
+                margin-right: 0;
+                margin-bottom: 13px;
+                &::after {
+                    content: ' ';
+                    display: block;
+                    position: absolute;
+                    height: 0.2px;
+                    width: 251px;
+                    background: #fff;
+                    left: -22px;
+                    bottom: -8px;
+                }
+                &:last-child {
+                    position: static;
+                    padding: 0;
+                    background: unset;
+                    &:before {
+                        content: ' ';
+                        display: block;
+                        position: absolute;
+                        height: 0.2px;
+                        width: 251px;
+                        background: #fff;
+                        left: 0px;
+                        transform: translateY(25px);
+                    }
+                    &:after {
+                        content: " ";
+                        display: block;
+                        position: absolute;
+                        background: url("../icons/down.svg") center center/cover no-repeat;
+                        width: 10px;
+                        height: 10px;
+                        top: 178px;
+                        transform: translateX(130px);
+                    }
+                }
+            }
+        }
+        &__logo {
+            &-icon {
+                content: url("../icons/logo_mobile.svg");
+                height: 31px;
+                width: 126px;
+            }
+        }
+        &__hamburger {
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 26px;
+            height: 12px translateY(3px);
+            span {
+                display: block;
+                height: 2px;
+                width: 100%;
+                background-color: #fff;
+                margin-bottom: 8px;
+                transition: 0.5s all;
+            }
+            &_active {
+                span {
+                    &:nth-child(2) {
+                       transform: translateX(7px);
+                    }
+                }
+            }
+        }
+    }
+}
