@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assets</title>
+    <link rel="stylesheet" href="css/style.css" await>
+    <link rel="shortcut icon" href="icons/logo.svg" type="image/x-icon">
+</head>
+<body>
+    <section class="menu">
+        <div class="container">
+            <div class="menu__wrapper">
+                <div class="menu__item">
+                    <div class="menu__logo">
+                        <img src="icons/logo.svg" alt="logo icon" class="menu__logo-icon">
+                    </div>
+                    <nav>
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a href="https://testnet.moonai.finance/" class="menu_list-item__link">MINT</a></li>
+                            <li class="menu__list-item"><a href="assets.html" class="menu_list-item__link">Assets</a></li>
+                            <li class="menu__list-item"><a href="#strategies" class="menu_list-item__link">Strategies</a></li>
+                        </ul>
+
+                        <div class="menu__hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </nav>
+                </div>
+    
+                <button class="btn btn_connect">Connect wallet</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="assets">
+        <div class="assets__title">High-Yield bearring assets</div>
+
+        <div class="dash dash_assets"></div>
+
+        <div class="assets__graph">
+            <div id="doughnut"></div>
+            <div class="assets__graph__legend">
+                <div class="assets__graph__legend-item">
+                    <div class="assets__graph__legend-item__box assets__graph__legend-item__box_atom"></div>
+                    <div class="assets__graph__legend-item__label">$ATOM</div>
+                </div>
+
+                <div class="assets__graph__legend-item">
+                    <div class="assets__graph__legend-item__box assets__graph__legend-item__box_inj"></div>
+                    <div class="assets__graph__legend-item__label">$INJ</div>
+                </div>
+
+                <div class="assets__graph__legend-item">
+                    <div class="assets__graph__legend-item__box assets__graph__legend-item__box_osmo"></div>
+                    <div class="assets__graph__legend-item__label">$OSMO</div>
+                </div>
+
+                <div class="assets__graph__legend-item">
+                    <div class="assets__graph__legend-item__box assets__graph__legend-item__box_scrt"></div>
+                    <div class="assets__graph__legend-item__label">$SCRT</div>
+                </div>
+
+                <div class="assets__graph__legend-item">
+                    <div class="assets__graph__legend-item__box assets__graph__legend-item__box_glp"></div>
+                    <div class="assets__graph__legend-item__label">$GLP</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="assets__table">
+            <div class="assets__table__labels">
+                <div class="assets__table__labels-item"></div>
+                <div class="assets__table__labels-item">ASSET</div>
+                <div class="assets__table__labels-item">PORTFOLIO %</div>
+                <div class="assets__table__labels-item">PRICE</div>
+                <div class="assets__table__labels-item">MARKET VALUE</div>
+            </div>
+
+            <div class="dash dash_table"></div>
+
+            <div class="assets__table__items">
+                <div class="assets__table__items-item">
+                    <img src="icons/assets/atom.svg" alt="" class="assets__table__items-item__img">
+
+                    <div class="assets__table__items-item__descr">$ATOM</div>
+                    <div class="assets__table__items-item__descr">51%</div>
+                    <div class="assets__table__items-item__descr">0</div>
+                    <div class="assets__table__items-item__descr">0</div>
+                </div>
+
+                <div class="assets__table__items-item">
+                    <img src="icons/assets/injective.svg" alt="" class="assets__table__items-item__img">
+
+                    <div class="assets__table__items-item__descr">$INJ</div>
+                    <div class="assets__table__items-item__descr">19%</div>
+                    <div class="assets__table__items-item__descr">0</div>
+                    <div class="assets__table__items-item__descr">0</div>
+                </div>
+
+                <div class="assets__table__items-item">
+                    <img src="icons/assets/osmo.svg" alt="" class="assets__table__items-item__img">
+
+                    <div class="assets__table__items-item__descr">$OSMO</div>
+                    <div class="assets__table__items-item__descr">10%</div>
+                    <div class="assets__table__items-item__descr">0</div>
+                    <div class="assets__table__items-item__descr">0</div>
+                </div>
+
+                <div class="assets__table__items-item">
+                    <img src="icons/assets/scrt.svg" alt="" class="assets__table__items-item__img">
+
+                    <div class="assets__table__items-item__descr">$SCRT</div>
+                    <div class="assets__table__items-item__descr">10%</div>
+                    <div class="assets__table__items-item__descr">0</div>
+                    <div class="assets__table__items-item__descr">0</div>
+                </div>
+
+                <div class="assets__table__items-item">
+                    <img src="icons/assets/glp.svg" alt="" class="assets__table__items-item__img">
+
+                    <div class="assets__table__items-item__descr">$GLP</div>
+                    <div class="assets__table__items-item__descr">10%</div>
+                    <div class="assets__table__items-item__descr">0</div>
+                    <div class="assets__table__items-item__descr">0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="overlay">
+        <div class="modal">
+            <div class="modal__header">
+                <div class="modal__header-text">CONNECT WALLET</div>
+                <div class="modal__close">&times;</div>
+            </div>
+
+            <div class="modal__body">
+                <div class="modal__body-item">
+                    <img src="icons/modal/keplr.svg" alt="logo" class="modal__body-item__img">
+                    <div class="modal__body-item__text">Keplr</div>
+                </div>
+
+                <div class="modal__body-item">
+                    <img src="icons/modal/metamask.svg" alt="logo" class="modal__body-item__img">
+                    <div class="modal__body-item__text">Metamask</div>
+                </div>
+
+                <!-- <div class="modal__body-item">
+                    <img src="icons/modal/keplr.svg" alt="logo" class="modal__body-item__img">
+                    <div class="modal__body-item__text">Keplr</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/donut.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/assets.js"></script>
+</body>
+</html>

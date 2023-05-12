@@ -164,3 +164,21 @@ const changeBtn = () => {
         btnMint.removeClass('mint__app__btn_active');
     } 
 }
+
+// Inputs
+
+// $('input[type=number]').eq(0).keyup(function() {
+//     $('input[type=number]').eq(1).val($('input[type=number]').eq(0).val() * 1.5);
+// });
+
+// $('input[type=number]').eq(1).keyup(function() {
+//     $('input[type=number]').eq(0).val($('input[type=number]').eq(1).val() / 1.5);
+// });
+
+$('input[type=number]').eq(1).keyup(function() {
+    $('input[type=number]').eq(0).val($('input[type=number]').eq(1).val());
+});
+
+$('input[type=number]').eq(0).keyup(function() {
+    $('input[type=number]').eq(1).val($('input[type=number]').eq(0).val());
+});
